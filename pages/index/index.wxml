@@ -1,0 +1,20 @@
+<view>
+  <SearchInput></SearchInput>
+  <!--
+    图片宽度 1125 * 352
+  -->
+  <view class="index_swiper">
+    <swiper autoplay indicator-dots circular>
+      <swiper-item
+        wx:for="{{swiperList}}"
+        wx:key="goods_id"
+        item-id="goods_id">
+        <navigator>
+          <image src="{{item.image_sec}}" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+    
+</view>
+  
